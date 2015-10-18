@@ -1,5 +1,8 @@
 # JFCalendarPicker
-一个简单的日历表集成
+
+![](http://7pum4h.com1.z0.glb.clouddn.com/日程表.gif)
+
+一个简单的日历表集成使用代码如下：
 ```
  JFCalendarPickerView *calendarPicker = [JFCalendarPickerView showOnView:self.view];
     calendarPicker.today = [NSDate date];
@@ -14,5 +17,5 @@
     };
 
 ```
-![](file://localhost/Users/baoxiuyizhantong/Desktop/%E6%97%A5%E5%8E%86%E8%A1%A8.gif)
+
 
