@@ -34,7 +34,11 @@
     JFCalendarPickerView *calendarPicker = [JFCalendarPickerView showOnView:self.view];
     calendarPicker.today = [NSDate date];
     calendarPicker.date = calendarPicker.today;
+    
+    //frame用外界控制日历的大小 可以更灵活的调用
     calendarPicker.frame = CGRectMake(0, 65, CalendarPickerViewW, 360);
+    
+    //提供一个block给外界调用 
     calendarPicker.calendarBlock = ^(NSInteger day, NSInteger month, NSInteger year){
         JFDetailViewController *detailVC = [[JFDetailViewController alloc]init];
         [self presentViewController:detailVC animated:YES completion:^{
